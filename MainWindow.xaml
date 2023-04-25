@@ -1,0 +1,184 @@
+﻿<Window x:Class="Lab___Deconstruct_Objects_to_Classes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab___Deconstruct_Objects_to_Classes"
+        mc:Ignorable="d"
+        Title="Head phones " Height="600" Width="800">
+
+    <Grid>
+        <Canvas x:Name="BtnBeats_" Background="#FFA29898">
+            <Canvas Height="269" Width="397" Canvas.Left="398" Canvas.Top="312" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Canvas.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6B5B1B"/>
+                        <GradientStop Color="#FF815859" Offset="0.414"/>
+                        <GradientStop Color="#FFAE9090" Offset="1"/>
+                    </LinearGradientBrush>
+                </Canvas.Background>
+                <ComboBox x:Name="cmbBrand" Height="35" Canvas.Left="194" Canvas.Top="44" Width="197" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <ComboBoxItem Content="Adidas"/>
+                    <ComboBoxItem Content="Nike"/>
+                    <ComboBoxItem Content="Puma"/>
+
+                </ComboBox>
+                <Label Content="Brand" Canvas.Left="93" Canvas.Top="51" HorizontalAlignment="Left" VerticalAlignment="Top" Width="78"/>
+                <TextBox x:Name="TxtYearmade" Canvas.Left="219" TextWrapping="Wrap" Text="" Canvas.Top="106" Width="154" Height="27"/>
+                <Label Content="year made " Canvas.Left="94" Canvas.Top="105" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65"/>
+                <Label Content="Size of ball " Canvas.Left="81" Canvas.Top="164" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <ComboBox x:Name="CmbSize" Height="30" Canvas.Left="193" Canvas.Top="162" Width="197" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <ComboBoxItem Content="Size1"/>
+                    <ComboBoxItem Content="Size2"/>
+                    <ComboBoxItem Content="Size3"/>
+                    <ComboBoxItem Content="Size4"/>
+                    <ComboBoxItem Content="Size5"/>
+
+                </ComboBox>
+                <Button x:Name="BtnSoccerball" Content="DSP SoccerBall" Canvas.Left="179" Canvas.Top="215" Height="27" Width="162" HorizontalAlignment="Left" VerticalAlignment="Top" Click="BtnSoccerball_Click"/>
+                <Label Content=" game Day Ball" Canvas.Left="125" Canvas.Top="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" FontSize="20"/>
+            </Canvas>
+
+            <Canvas x:Name="TxtYear" Height="309" Width="396" Canvas.Left="2" RenderTransformOrigin="0.513,0.506" Canvas.Top="7">
+                <Canvas.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF63636B"/>
+                        <GradientStop Color="#FF353333" Offset="1"/>
+                        <GradientStop Color="#FF885555" Offset="0.349"/>
+                        <GradientStop Color="#FFD5B0B0" Offset="0.669"/>
+                    </LinearGradientBrush>
+                </Canvas.Background>
+
+                <ComboBox x:Name="CmbdriverSize" Height="30" Canvas.Left="10" Canvas.Top="111" Width="186" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <ComboBoxItem Content="driver_30mm"/>
+                    <ComboBoxItem Content="driver_40mm"/>
+                    <ComboBoxItem Content="driver_50mm"/>
+                    <ComboBoxItem Content="driver_55mm"/>
+                    <ComboBoxItem Content="driver_60mm"/>
+
+                </ComboBox>
+                <ComboBox x:Name="CmbFrequencyResponse" Height="30" Canvas.Left="8" Canvas.Top="64" Width="186" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <ComboBoxItem Content="Hz20_kHz20"/>
+                    <ComboBoxItem Content="Hz5_kHz35"/>
+                    <ComboBoxItem Content="Hz10_kHz40"/>
+                    <ComboBoxItem Content="Hz15_kHz25"/>
+                    <ComboBoxItem Content="Hz20_kHz40"/>
+
+                </ComboBox>
+                <TextBox x:Name="TxtYear1" Canvas.Left="24" TextWrapping="Wrap" Text="" Canvas.Top="157" Width="120"/>
+                <ComboBox x:Name="CmbBeats" Height="30" Canvas.Left="6" Canvas.Top="17" Width="186" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <ComboBoxItem Content="Beats Studio" />
+                    <ComboBoxItem Content="Beats Solo"/>
+
+
+                </ComboBox>
+                <Label Content="driverSize" Canvas.Left="234" Canvas.Top="109" HorizontalAlignment="Left" VerticalAlignment="Top" Width="63" Height="35"/>
+                <Label Content="FrequencyResponse" Canvas.Left="237" Canvas.Top="66" Width="63" Height="35" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <Label Content="Beats" Canvas.Left="235" Canvas.Top="12" Width="63" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Label Content="year" Canvas.Left="232" Canvas.Top="145" Width="63" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Button Content="Beats" Canvas.Left="23" Canvas.Top="210" Height="35" Width="225" Click="Button_Click"/>
+
+
+            </Canvas>
+            <Canvas Height="318" Width="403" Canvas.Left="397" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Canvas.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FFD1B12F" Offset="0.127"/>
+                        <GradientStop Color="#FF6B5B1B" Offset="0.648"/>
+                    </LinearGradientBrush>
+                </Canvas.Background>
+                <Label Content="Wristwatch" Canvas.Left="19" Canvas.Top="21" HorizontalAlignment="Left" VerticalAlignment="Center" Width="125" FontSize="20"/>
+                <ComboBox x:Name="CmbWatch" Height="30" Canvas.Top="68" Width="186" Canvas.Left="170" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <ComboBoxItem Content="Omega"/>
+                    <ComboBoxItem Content="Tag Heuer"/>
+                    <ComboBoxItem Content="casio"/>
+
+
+                </ComboBox>
+                <ComboBox x:Name="CmbCaseMaterial" Height="30" Canvas.Top="116" Width="186" Canvas.Left="172" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <ComboBoxItem Content="Carbon Fiber"/>
+                    <ComboBoxItem Content="Ceramic"/>
+                    <ComboBoxItem Content="Titanium"/>
+                    <ComboBoxItem Content="StainlessSteel"/>
+
+
+
+                </ComboBox>
+                <ComboBox x:Name="CmbYearMade" Height="30" Canvas.Top="167" Width="186" Canvas.Left="176" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <ComboBoxItem Content="pre2000s"/>
+                    <ComboBoxItem Content="early1990s"/>
+                    <ComboBoxItem Content="late1980s"/>
+
+
+                </ComboBox>
+                <TextBox x:Name="Txtprice" Canvas.Left="190" TextWrapping="Wrap" Text="" Canvas.Top="213" Width="160" Height="29"/>
+                <Label Content="wrist watch" Canvas.Left="64" Canvas.Top="68" Width="88" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Label Content="Year made" Canvas.Left="75" Canvas.Top="164" Width="91" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Label Content="matirial " Canvas.Left="72" Canvas.Top="116" Width="63" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Label Content="make an offer $" Canvas.Left="57" Canvas.Top="214" Width="103" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Button Content="Place offer " Canvas.Left="218" Canvas.Top="265" Height="27" Width="122" HorizontalAlignment="Left" VerticalAlignment="Center" Click="Button_Click_1"/>
+            </Canvas>
+            <Canvas Height="293" Width="400" Canvas.Left="-1" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="292">
+                <Canvas.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF675A5A"/>
+                        <GradientStop Color="#FFD1B12F" Offset="0.127"/>
+                        <GradientStop Color="#FF6B5B1B" Offset="0.648"/>
+                    </LinearGradientBrush>
+                </Canvas.Background>
+                <ComboBox x:Name="CmbHut" Height="30" Canvas.Top="50" Width="186" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="9">
+                    <ComboBoxItem Content="Coach"/>
+                    <ComboBoxItem Content="RayBan"/>
+                    <ComboBoxItem Content="Armani"/>
+                    <ComboBoxItem Content="Burberry"/>
+
+
+                </ComboBox>
+                <ComboBox x:Name="CmbLens" Height="30" Canvas.Top="87" Width="186" Canvas.Left="11" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <ComboBoxItem Content="Prescriptionglasses"/>
+                    <ComboBoxItem Content="sunglasses"/>
+                    <ComboBoxItem Content="Fashionglasses"/>
+
+
+                </ComboBox>
+                <ComboBox x:Name="CmbWidth" Height="30" Canvas.Top="126" Width="186" Canvas.Left="12" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <ComboBoxItem Content="Narrow: 42-48mm"/>
+                    <ComboBoxItem Content="Average: 49-54mm"/>
+                    <ComboBoxItem Content="Wide 55mm and up"/>
+
+                </ComboBox>
+                <ComboBox x:Name="CmbHeight" Height="30" Canvas.Top="167" Width="186" Canvas.Left="16" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <ComboBoxItem Content="Short: 25-28mm"/>
+                    <ComboBoxItem Content="Average: 29-36mm"/>
+                    <ComboBoxItem Content="Tall: 37mm and up"/>
+
+
+                </ComboBox>
+                <Label Content="sun glasses hut " Canvas.Left="16" Canvas.Top="11" Height="37" Width="189" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20"/>
+                <Button x:Name="Btnsunglasses" Content="sun glasses hut" Canvas.Left="4" Canvas.Top="222" Height="43" Width="257" HorizontalAlignment="Left" VerticalAlignment="Center" Click="Btnsunglasses_Click"/>
+                <Button x:Name="BtnSaveall" Content="Save all " Canvas.Left="320" Canvas.Top="-12" Height="58" Width="155" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Click="BtnSaveall_Click"/>
+                <ComboBox x:Name="CmbWheels" Height="30" Canvas.Top="57" Width="186" Canvas.Left="284" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <ComboBoxItem Content="unicycle"/>
+                    <ComboBoxItem Content="tricycle"/>
+                    <ComboBoxItem Content="bicycle"/>
+                  
+
+
+                </ComboBox>
+                <Label Canvas.Left="338" Canvas.Top="99" Width="78" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Label Content="wheels " Width="78" HorizontalAlignment="Left" Canvas.Left="344" Canvas.Top="97" VerticalAlignment="Top"/>
+                <Label x:Name="TxtBrand" Content="Brand" Width="78" Canvas.Left="401" Canvas.Top="153" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.552,0.633"/>
+                <TextBox x:Name="TxtBrand1" Canvas.Left="330" TextWrapping="Wrap" Text="" Canvas.Top="129" Width="120"/>
+                <TextBox x:Name="TxtColor" Canvas.Left="344" TextWrapping="Wrap" Text="" Canvas.Top="186" Width="120"/>
+                <Label x:Name="TxtBrand_Copy" Content="color" Width="78" Canvas.Left="356" Canvas.Top="210" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Button x:Name="BtnBike" Content="bike " Canvas.Left="343" Canvas.Top="236" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="109" Click="BtnBike_Click"/>
+
+            </Canvas>
+
+        </Canvas>
+
+
+
+    </Grid>
+</Window>
